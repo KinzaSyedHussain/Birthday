@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Birthday Click Challenge 🎉</h1>
+        <div class="theme-selector">
+            <button class="theme-btn" data-theme="pink">Pink Theme</button>
+            <button class="theme-btn" data-theme="blue">Blue Theme</button>
+            <button class="theme-btn" data-theme="purple">Purple Theme</button>
+        </div>
+        <p>Click the button <strong>100 times</strong> to get a special birthday surprise!</p>
+        <button id="clickButton">Click Me!</button>
+        <p id="counter">Clicks: 0</p>
+        <div id="wish" class="hidden">
+            <h2>🎂 Happy Birthday! 🎉</h2>
+            <img src="images/cake.png" alt="Birthday Cake" id="cakeImage">
+            <img src="images/party-popper.gif" alt="Party Popper" class="party-popper left-popper">
+            <img src="images/party-popper.gif" alt="Party Popper" class="party-popper right-popper">
+            <p>Wishing you all the happiness in the world! Have a fantastic year ahead! 🌟</p>
+        </div>
+    </div>
+    
+    <div id="balloons-container-left" class="balloons-container"></div>
+    <div id="balloons-container-right" class="balloons-container"></div>
+    
+    <div class="corner-popper top-left"></div>
+    <div class="corner-popper top-right"></div>
+    <div class="corner-popper bottom-left"></div>
+    <div class="corner-popper bottom-right"></div>
+    
+    <script src="script.js"></script>
+    <audio id="birthdaySong" src="audio/birthday_song.mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
